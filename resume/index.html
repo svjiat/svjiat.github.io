@@ -19,12 +19,12 @@
             <nav class="navlist">
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="/index.html">
                             про меня
                         </a>
                     </li>
                     <li>
-                        <a href=".\secondpage.html">
+                        <a href="./static/secondpage.html">
                             навыки
                         </a>
                     </li>
@@ -39,18 +39,21 @@
     </header>
 
     <article>
+
         <section class="columns">
+
             <div class="foto"><img src="static/images/IMG_20231031_203856.jpg" alt="my photo">
             </div>
 
-            <div class="basicInfo">
+            <ul class="basicInfo">
                 <h1>Петров Святослав Игоревич</h1>
-                <p>26.01.2001</p>
-                <p>Место рождения: Житомир</p>
-                <p>Город проживания: Киев</p>
-                <p>Женат</p>
-            </div>
+                <li>26.01.2001</li>
+                <li>Место рождения: Житомир</li>
+                <li>Город проживания: Киев</li>
+                <li>Женат</li>
+            </ul>
         </section>
+
         <section class="filler">
             <h2>Some facts</h2>
             <p>My knowledge are limited. For example i can speak english, but have alot of troubles with teoretical
@@ -60,6 +63,12 @@
                 salary level in this company. And still i earn barely enough to feed myself. So i come up with a
                 solution, to try and learn programming and go to normal place. So this card represents my practice in
                 mastering the most basic things in this new for me profession.</p>
+        </section>
+        <section class="feedback">
+
+            <form name="feedback" action="" class="feedbackForm"><textarea type="text" class="input"
+                    placeholder="Ваши примечания"></textarea> <button type="reset" class="feedbackButtons">all
+                clear</button> <button type="submit" class="feedbackButtons">send</button></form>
         </section>
     </article>
 
