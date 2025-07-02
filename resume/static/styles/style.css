@@ -1,7 +1,8 @@
 Body{
     margin: 0;
-    padding: 0
-    ;
+    padding: 0;
+    font-family: 'Comfortaa', serif;
+        font-size: 1em;
 }
 header{
 
@@ -18,16 +19,6 @@ header{
     top: 0;
 }
 
-header a{
-    
-    color: azure;
-    text-decoration: none;
-
-    padding-inline: 10px;
-    height: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
 
 header a:hover{
     transition-duration:2s;
@@ -59,26 +50,81 @@ header a:hover{
     text-align: center;
 }
 
-/* @media(max-width:1000px){
+.drop{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.navlist{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.drop a{
+    color: azure;
+    text-decoration: none;
+    padding-inline: 10px;
+    height: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.button{
+    display: none;
+}
+
+
+
+@media(max-width:1000px){
     .foto{
-    grid-column: 1/7;
+    display: flex;
+    grid-column: span 6;
+    align-items: center;
 }
 .basicInfo{
-    grid-column: 7/13;
+    grid-column: span 6;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-} */
-@media(max-width:1000px){
+}
+@media(max-width:750px){
+
+header{
+    justify-content: flex-start;
+}
+.drop{
+    width: fit-content;
+}
+.button{
+    display: block;
+}
+
+.navlist{
+    display: none;
+}
+
+.drop:hover .navlist{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: rgba(82, 82, 82, 0.765);
+
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+
     .foto{
-        display: flex;
-    grid-column: 1/13;
-    align-items: center;
+    grid-column: span 13;
 }
 .basicInfo{
-    grid-column: 1/13;
+    grid-column: span 13;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,15 +135,15 @@ header a:hover{
 #footer{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    text-align: center;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     background-color: rgb(138, 138, 138);
 }
 #footer a{
     text-decoration: none;
     color: black;
     font-size: 1.5em;
-    margin: 2em;
+    margin-inline:1em;
+    margin-block: 2em;
 }
