@@ -14,23 +14,24 @@
 <body>
 
     <header>
+
         <div class="drop">
             <a href="#" class="button">&equiv;</a>
             <nav class="navlist">
                 <ul>
                     <li>
-                        <a href="/index.html">
-                            про меня
+                        <a href="index.html">
+                            Про меня
                         </a>
                     </li>
                     <li>
-                        <a href="./static/secondpage.html">
-                            навыки
+                        <a href="#skills">
+                            Навыки
                         </a>
                     </li>
                     <li>
                         <a href="#footer">
-                            контакты
+                            Контакты
                         </a>
                     </li>
                 </ul>
@@ -38,11 +39,20 @@
         </div>
     </header>
 
-    <article>
+    <main>
 
         <section class="columns">
+            <nav class="topics">
+                <ul>
+                    <li><a href="#skills">Previous expirience</a></li>
+                    <li><a href="#"></a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
 
-            <div class="foto"><img src="static/images/IMG_20231031_203856.jpg" alt="my photo">
+                </ul>
+            </nav>
+            <div class="foto"><img src="static/images/svjiatFoto.jpg" alt="my photo">
             </div>
 
             <ul class="basicInfo">
@@ -63,14 +73,22 @@
                 salary level in this company. And still i earn barely enough to feed myself. So i come up with a
                 solution, to try and learn programming and go to normal place. So this card represents my practice in
                 mastering the most basic things in this new for me profession.</p>
+            <h2 class="filler" id="skills">Previous expirience</h2>
+            <p>I`ve been working on planty of diferrent jobs, such as Taxi driver, partly designer, builder, delivery
+                manager, sales man in wine shop. Every work i did was, and now is high quality. I personaly not afraid
+                of learning new skills, and for description of all my bosses ever: 'cach every thing realy quickly'. I
+                would like to find the work, where i could grow as a specialict, learn new features constantly, and earn
+                enaugh for my family.</p>
         </section>
         <section class="feedback">
 
-            <form name="feedback" action="" class="feedbackForm"><textarea type="text" class="input"
-                    placeholder="Ваши примечания"></textarea> <button type="reset" class="feedbackButtons">all
-                clear</button> <button type="submit" class="feedbackButtons">send</button></form>
+            <form name="feedback" action="" class="feedbackForm">
+                <label for="input"> Ваши примечания <textarea type="text" class="input" id="input" placeholder="Ваши примечания"></textarea> </label>
+                <button type="reset" class="feedbackButtons">all clear</button> 
+                <button type="submit" class="feedbackButtons">send</button>
+            </form>
         </section>
-    </article>
+    </main>
 
     <footer id="footer">
         <img src="static/images/gmail-icon-free-png.webp" style="height: 1.5em; width: 1.5em; margin-left: 2em;"
