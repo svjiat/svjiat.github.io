@@ -5,6 +5,8 @@ Body{
         font-size: 1em;
 }
 header{
+        box-sizing: border-box;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,34 +21,56 @@ header{
 }
 
 .navlist ul{
+        box-sizing: border-box;
+
     list-style: none;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    justify-items: center;
 }
 
 
 header a:hover{
+    box-sizing: border-box;
     transition-duration:1s;
-    border-style: solid;
-    border-width: 0px;
     border-radius: 0.5em;
     background-color: rgb(65, 65, 65);
     padding: 10px;
 }
-li{
-    margin-top: 15px;
+
+.topics{
+    display: flex;
+    grid-column: 1/3;
+    background-color: rgb(120, 157, 159);
+    align-items: left;
+    flex-direction: column;
 }
+
+.topics ul{
+    list-style: none;
+}
+
+.topics a{
+    text-decoration: none;
+    color:rgb(35, 48, 49);
+}
+
+.topics a:hover{
+    text-decoration: none;
+    color:rgb(62, 84, 86);
+}
+
 .columns{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    background-color: rgb(148, 193, 195);
+    background-color: rgba(148, 193, 195, 0.829);
 }
 
 .foto{
     display: flex;
-    grid-column: 2/7;
+    grid-column: 3/8;
     justify-content: center;
     
 }
@@ -60,7 +84,7 @@ li{
 
 
 .basicInfo{
-    grid-column: 7/12;
+    grid-column: 8/13;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
@@ -97,6 +121,9 @@ li{
 
 
 @media(max-width:1000px){
+    .topics{
+        display: none;
+    }
     .foto{
     display: flex;
     grid-column: span 6;
@@ -111,6 +138,9 @@ li{
 }
 }
 @media(max-width:750px){
+    .topics{
+        display: none;
+    }
 
 header{
     justify-content: flex-start;
@@ -142,9 +172,18 @@ header{
     width: fit-content;
  }
 
+ .navlist ul li{
+    box-sizing: border-box;
+    padding: 20px;
+ }
 
     .foto{
     grid-column: span 13;
+}
+
+.foto img{
+    max-height: 70vh;
+    object-fit: cover;
 }
 .basicInfo{
     grid-column: span 13;
@@ -153,6 +192,8 @@ header{
     justify-content: center;
     text-align: center;
 }
+
+
 }
 
 @media (max-height: 500px){
@@ -200,7 +241,7 @@ header{
 .feedback{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 .feedbackForm{
@@ -210,14 +251,17 @@ header{
 }
 
 .input{
-    width: 30em;
-    height: 5em;
+    box-sizing: border-box;
+    width: 100%;
     max-width: 30em;
+    height: 5em;
     max-height: 10em;    
     align-self: center;
+    
 }
 
 .feedbackButtons{
+    
     width: 5em;
     border-radius: 10px;
     border-color: transparent;
