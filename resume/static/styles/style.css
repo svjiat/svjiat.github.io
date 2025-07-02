@@ -5,7 +5,6 @@ Body{
         font-size: 1em;
 }
 header{
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,9 +13,17 @@ header{
     height: fit-content;
     justify-content: space-around;
     background-color: rgba(82, 82, 82, 0.765);
-    font-size: 2em;
+    font-size: 1.5em;
     position: sticky;
     top: 0;
+}
+
+.navlist ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 
@@ -33,13 +40,19 @@ header a:hover{
 .columns{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-
+    background-color: rgb(148, 193, 195);
 }
 
 .foto{
     display: flex;
     grid-column: 2/7;
     justify-content: center;
+}
+
+.foto img{
+        height: auto;
+    width: 100%;
+
 }
 
 .basicInfo{
@@ -113,12 +126,16 @@ header{
     flex-direction: column;
     width: fit-content;
     background-color: rgba(82, 82, 82, 0.765);
-
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
+    width: 100%;
 }
-
+ .drop:hover .navlist ul{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+ }
 
     .foto{
     grid-column: span 13;
@@ -132,17 +149,32 @@ header{
 }
 }
 
+.filler{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 2em  ;
+}
+
 #footer{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: rgb(138, 138, 138);
+    background-color: rgb(42, 42, 42);
 }
 #footer a{
     text-decoration: none;
-    color: black;
+    color: rgb(122, 122, 122);
+    font-size: 1.5em;
+    margin-inline:1em;
+    margin-block: 2em;
+}
+
+#footer a:hover{
+    text-decoration: none;
+    color:lightblue;
     font-size: 1.5em;
     margin-inline:1em;
     margin-block: 2em;
