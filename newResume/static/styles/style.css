@@ -257,11 +257,7 @@ body{
 }
 
 #footer a:hover{
-    text-decoration: none;
     color:lightblue;
-    font-size: 1.5em;
-    margin-inline:1em;
-    margin-block: 2em;
 }
 
 
@@ -290,7 +286,6 @@ body{
 }
 
 .feedbackButtons{
-    
     width: 5em;
     border-radius: 10px;
     border-color: transparent;
