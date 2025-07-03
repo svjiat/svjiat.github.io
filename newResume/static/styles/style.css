@@ -60,7 +60,6 @@ header a:hover{
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    justify-items: center;
 }
 
 .button{
